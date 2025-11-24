@@ -46,6 +46,17 @@
             position: relative;
         }
 
+        /* Vertical divider between left and right sections */
+        .container::before {
+            content: '';
+            position: absolute;
+            left: calc(40% + 3rem);
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
         /* Left Section */
         .left-section {
             flex: 0 0 40%;
@@ -105,12 +116,20 @@
             flex-direction: column;
             gap: 2.5rem;
             padding: 2rem;
+            position: relative;
         }
 
         .section {
             display: flex;
             flex-direction: column;
             padding: 1.5rem;
+        }
+
+        /* Horizontal divider */
+        .horizontal-divider {
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 -3rem 0 -2.51rem;
         }
 
         .section-title {
@@ -177,6 +196,11 @@
             .left-section,
             .right-section {
                 flex: 1 1 100%;
+            }
+
+            .container::before,
+            .horizontal-divider {
+                display: none;
             }
 
             .title {
@@ -246,6 +270,9 @@
                     From swing to salsa, K-pop to synth-pop, bluegrass to soul, these songs have been crafted using artificial intelligence by your favorite holiday music DJ, Kellie Kringle.
                 </p>
             </div>
+
+            <!-- Horizontal Divider -->
+            <div class="horizontal-divider"></div>
 
             <!-- Section 2: Do You Hear What I Hear? -->
             <div class="section">
