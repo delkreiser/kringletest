@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The KringleTones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --pink: #C8205E;
+            --cyan: #00D98D;
+            --button-green: rgb(26, 213, 122);
+            --button-red: #C8205E;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-image: url('images/bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.9);
+            border-radius: 30px;
+            padding: 3rem;
+            max-width: 1200px;
+            width: 100%;
+            display: flex;
+            gap: 3rem;
+            position: relative;
+        }
+
+        /* Left Section */
+        .left-section {
+            flex: 0 0 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 2rem;
+        }
+
+        .logo-image {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 2rem;
+            border-radius: 50%;
+        }
+
+        .title {
+            font-family: 'Abril Fatface', serif;
+            font-size: 41px;
+            color: var(--pink);
+            line-height: 50px;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+        }
+
+        .description {
+            color: #ffffff;
+            font-size: 13px;
+            line-height: 23.3px;
+            margin-bottom: 2rem;
+        }
+
+        .email-button {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--button-red);
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .email-button:hover {
+            background-color: var(--button-green);
+        }
+
+        /* Right Section */
+        .right-section {
+            flex: 0 0 60%;
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            padding: 2rem;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem;
+        }
+
+        .section-title {
+            font-family: 'Abril Fatface', serif;
+            font-size: 28px;
+            color: var(--cyan);
+            margin-bottom: 1rem;
+            font-weight: 400;
+            line-height: 34px;
+        }
+
+        .section-body {
+            color: #ffffff;
+            font-size: 13px;
+            line-height: 23.3px;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Buttons */
+        .buttons-container {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .platform-button {
+            background-color: var(--button-green);
+            color: #000000;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .platform-button:hover {
+            background-color: var(--button-red);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(200, 32, 94, 0.4);
+        }
+
+        .platform-button i {
+            font-size: 1.1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .container {
+                flex-direction: column;
+                padding: 2rem;
+                gap: 2rem;
+            }
+
+            .left-section,
+            .right-section {
+                flex: 1 1 100%;
+            }
+
+            .title {
+                font-size: 2.5rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .logo-image {
+                width: 100px;
+                height: 100px;
+            }
+
+            .buttons-container {
+                flex-direction: column;
+            }
+
+            .platform-button {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 1.5rem;
+                border-radius: 20px;
+            }
+
+            .title {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 1.3rem;
+            }
+
+            .description,
+            .section-body {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <img src="images/note.jpg" alt="The KringleTones Logo" class="logo-image">
+            <h1 class="title">The<br>KringleTones</h1>
+            <p class="description">
+                Welcome to the jolly world of The KringleTones — a festive collective of AI musicians united by one mission: to spread holiday cheer across genres and generations.
+            </p>
+            <a href="/cdn-cgi/l/email-protection#ea819883848d868f9e85848f99aa8d878b8386c4898587" class="email-button" aria-label="Email us">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <!-- Section 1: Statistically Festive -->
+            <div class="section">
+                <h2 class="section-title">Statistically Festive</h2>
+                <p class="section-body">
+                    From swing to salsa, K-pop to synth-pop, bluegrass to soul, these songs have been crafted using artificial intelligence by your favorite holiday music DJ, Kellie Kringle.
+                </p>
+            </div>
+
+            <!-- Section 2: Do You Hear What I Hear? -->
+            <div class="section">
+                <h2 class="section-title">Do You Hear What I Hear?</h2>
+                <p class="section-body">
+                    The KringleTones are available to stream on all major platforms. Follow along and let the sleigh bells swing!
+                </p>
+                <div class="buttons-container">
+                    <a href="https://open.spotify.com/artist/50ZgBWA2EcgwWXhiTxCPmk" target="_blank" class="platform-button">
+                        <i class="fab fa-spotify"></i>
+                        Spotify
+                    </a>
+                    <a href="https://music.apple.com/us/artist/the-kringletones/1852940086" target="_blank" class="platform-button">
+                        <i class="fab fa-apple"></i>
+                        Apple Music
+                    </a>
+                    <a href="https://music.youtube.com/channel/UCLsoaoVGRb33Re9l7e75VGQ" target="_blank" class="platform-button">
+                        <i class="fab fa-youtube"></i>
+                        YouTube
+                    </a>
+                </div>
+            </d
