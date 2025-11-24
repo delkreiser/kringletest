@@ -6,7 +6,7 @@
     <title>The KringleTones</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         :root {
@@ -23,7 +23,7 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             background-image: url('images/bg.jpg');
             background-size: cover;
             background-position: center;
@@ -36,7 +36,9 @@
         }
 
         .container {
-            background-color: rgba(0, 0, 0, 0.9);
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
             border-radius: 30px;
             padding: 3rem;
             max-width: 1200px;
@@ -208,6 +210,16 @@
                 gap: 0;
             }
 
+            .section {
+                padding: 0;
+            }
+
+            .description,
+            .section-body {
+                font-size: 14px;
+                line-height: 25.7px;
+            }
+
             .container::before {
                 display: none;
             }
@@ -225,11 +237,13 @@
             }
 
             .title {
-                font-size: 2.5rem;
+                font-size: 44px;
+                line-height: 52.8px;
             }
 
             .section-title {
-                font-size: 1.5rem;
+                font-size: 31px;
+                line-height: 37.4px;
             }
 
             .logo-image {
@@ -246,26 +260,6 @@
                 justify-content: center;
             }
         }
-
-        @media (max-width: 480px) {
-            .container {
-                padding: 1.5rem;
-                border-radius: 20px;
-            }
-
-            .title {
-                font-size: 2rem;
-            }
-
-            .section-title {
-                font-size: 1.3rem;
-            }
-
-            .description,
-            .section-body {
-                font-size: 0.9rem;
-            }
-        }
     </style>
 </head>
 <body>
@@ -277,7 +271,7 @@
             <p class="description">
                 Welcome to the jolly world of The KringleTones — a festive collective of AI musicians united by one mission: to spread holiday cheer across genres and generations.
             </p>
-            <a href="mailto:kringletones@gmail.com" class="email-button" aria-label="Email us">
+            <a href="/cdn-cgi/l/email-protection#acc7dec5c2cbc0c9d8c3c2c9dfeccbc1cdc5c082cfc3c1" class="email-button" aria-label="Email us">
                 <i class="fas fa-envelope"></i>
             </a>
         </div>
@@ -316,6 +310,4 @@
                     <a href="https://music.youtube.com/channel/UCLsoaoVGRb33Re9l7e75VGQ" target="_blank" class="platform-button">
                         <i class="fab fa-youtube"></i>
                         YouTube
-                    </a>
-                </div>
-            </d
+                  
