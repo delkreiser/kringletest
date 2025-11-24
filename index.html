@@ -33,15 +33,16 @@
             align-items: center;
             justify-content: center;
             padding: 2rem;
+            overflow-x: hidden;
         }
 
         .container {
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.75);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
-            border-radius: 30px;
+            border-radius: 40px;
             padding: 3rem;
-            max-width: 1200px;
+            max-width: 1000px;
             width: 100%;
             display: flex;
             gap: 3rem;
@@ -82,7 +83,7 @@
             line-height: 50px;
             margin-bottom: 1.5rem;
             font-weight: 400;
-            text-shadow: 1px 1px 1px rgba(0, 217, 141, 0.8);
+            text-shadow: 1px 1px 2px rgba(0, 217, 141, 0.8);
         }
 
         .description {
@@ -190,7 +191,7 @@
         }
 
         /* Responsive Design */
-        @media (max-width: 768px) {
+        @media (max-width: 768px) and (orientation: portrait) {
             body {
                 padding: 1rem;
             }
