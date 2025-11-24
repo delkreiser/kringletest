@@ -132,6 +132,11 @@
             margin: 0 -3rem 0 -2.51rem;
         }
 
+        /* Mobile dividers - hidden by default */
+        .mobile-divider {
+            display: none;
+        }
+
         .section-title {
             font-family: 'Abril Fatface', serif;
             font-size: 28px;
@@ -203,6 +208,13 @@
                 display: none;
             }
 
+            .mobile-divider {
+                display: block;
+                height: 1px;
+                background-color: rgba(255, 255, 255, 0.2);
+                margin: 2rem 0;
+            }
+
             .title {
                 font-size: 2.5rem;
             }
@@ -256,10 +268,13 @@
             <p class="description">
                 Welcome to the jolly world of The KringleTones — a festive collective of AI musicians united by one mission: to spread holiday cheer across genres and generations.
             </p>
-            <a href="/cdn-cgi/l/email-protection#ea819883848d868f9e85848f99aa8d878b8386c4898587" class="email-button" aria-label="Email us">
+            <a href="mailto:kringletones@gmail.com" class="email-button" aria-label="Email us">
                 <i class="fas fa-envelope"></i>
             </a>
         </div>
+
+        <!-- Mobile Divider -->
+        <div class="mobile-divider"></div>
 
         <!-- Right Section -->
         <div class="right-section">
